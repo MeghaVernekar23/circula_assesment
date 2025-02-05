@@ -1,0 +1,25 @@
+{
+  "name": "circula-assesment",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "npx cucumber-js --config cucumber.cjs",
+    "report": "node generate-report.js",
+    "test:report": "npm run test && npm run report"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@cucumber/cucumber": "^11.2.0",
+    "@cucumber/pretty-formatter": "^1.0.1",
+    "@playwright/test": "^1.50.1",
+    "chai": "^5.1.2",
+    "cucumber-html-reporter": "^7.2.0"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.7"
+  }
+}
