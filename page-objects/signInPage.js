@@ -1,6 +1,6 @@
 
 import Base from "../page-objects/base.js";
-import signInLocators from "../locators/SignInPage.json" assert { type: "json" }; 
+import signInLocators from "../locators/signInPage.json" assert { type: "json" }; 
 
 class SignInPage extends Base {
     constructor(page, logFunction) {
