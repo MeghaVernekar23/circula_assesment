@@ -25,3 +25,30 @@ Feature: Sign-Up Navigation
     Examples:
       | Email Address     | Password  | First Name | Last Name | Phone Number |
       | megha@circula.com | Megha@123 | Megha      | Vernekar  |     12345678 |
+
+  Scenario Outline: Verify that the Company Information section allows entering details
+    Given the user is on the Sign-Up page
+    When the user enters email address "<Email Address>" password "<Password>" First Name "<First Name>" Last Name "<Last Name>" Phone Number "<Phone Number>"
+    And the user clicks on Next Step
+    And the user should be successfully navigated to the Company Information page
+    And the user enters the company name "<Company Name>"
+    And the user selects a reason "<reason>" from How did you hear about us?
+    And country "<country>" should be pre-selected in the Where is your company registered? dropdown
+
+    Examples:
+      | Email Address     | Password  | First Name | Last Name | Phone Number | Company Name | reason      | country |
+      | megha@circula.com | Megha@123 | Megha      | Vernekar  |     12345678 | Circula      | Tax Advisor | Germany |
+
+  Scenario Outline: Verify that user is able to Country Sweden in Where is your company registered? dropdown
+    Given the user is on the Sign-Up page
+    When the user enters email address "<Email Address>" password "<Password>" First Name "<First Name>" Last Name "<Last Name>" Phone Number "<Phone Number>"
+    And the user clicks on Next Step
+    And the user should be successfully navigated to the Company Information page
+    And the user enters the company name "<Company Name>" selects a reason "<reason>" from How did you hear about us?
+    And country "<country>" should be present in dropdown list of Where is your company registered? dropdown
+    And the user selects country "<country>" from the dropdown list
+    And country "<country>" should be selected in the Where is your company registered? dropdown
+
+    Examples:
+      | Email Address     | Password  | First Name | Last Name | Phone Number | Company Name | reason      | country |
+      | megha@circula.com | Megha@123 | Megha      | Vernekar  |     12345678 | Circula      | Tax Advisor | Sweden  |
