@@ -4,7 +4,7 @@ import dotenv from 'dotenv';
 
 dotenv.config();
 
-setDefaultTimeout(1000 * 60 * 2); 
+setDefaultTimeout(1000 * 60 * 2);
 
 let browser;
 let context;
@@ -12,7 +12,7 @@ let page;
 
 
 function getBrowserType() {
-    const browserType = process.env.BROWSER || 'chromium'; 
+    const browserType = (process.env.BROWSER || 'chromium').toLowerCase();
     switch (browserType.toLowerCase()) {
         case 'chromium':
             return chromium;
@@ -29,7 +29,7 @@ function getBrowserType() {
 
 BeforeAll(async function () {
     const selectedBrowser = getBrowserType();
-    const isHeadless = process.env.HEADLESS === 'true'; 
+    const isHeadless = process.env.HEADLESS === 'true';
 
     console.log(`Launching ${process.env.BROWSER} in ${isHeadless ? "headless" : "headed"} mode...`);
 
@@ -47,22 +47,22 @@ Before(async function () {
     });
 
     page = await context.newPage();
-    this.page = page; 
+    this.page = page;
 });
 
 
 After(async function (scenario) {
-    if(scenario.result.status == Status.FAILED) {
-        const img = await page.screenshot({path: `./reports/${scenario.pickle.name}.png`});	
+    if (scenario.result.status == Status.FAILED) {
+        const img = await page.screenshot({ path: `./reports/${scenario.pickle.name}.png` });
         this.attach(img, 'image/png');
     }
     if (page) {
         await page.close();
-        
+
     }
     if (context) {
         await context.close();
-        
+
     }
 });
 
@@ -70,7 +70,7 @@ After(async function (scenario) {
 AfterAll(async function () {
     if (browser) {
         await browser.close();
-        
+
     }
 });
 
