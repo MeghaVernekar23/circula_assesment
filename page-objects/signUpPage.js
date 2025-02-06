@@ -61,14 +61,13 @@ class SignUpPage extends Base {
     }
 
     async acceptPrivacySetting(page) {
-        const shadowRoot = await page.locator("#usercentrics-root").evaluateHandle(el => el.shadowRoot);
-
-    // Find the button that contains the text "Accept All"
-    const acceptButton = await shadowRoot.evaluateHandle(root => 
-        [...root.querySelectorAll('button')].find(btn => btn.textContent.includes('Accept All'))
-    );
-
-    if (acceptButton) await acceptButton.click();
+        await page.waitForSelector("div[data-testid='uc-footer']", { timeout: 5000 });
+        const shadowRoot = await page.locator("#usercentrics-root").evaluateHandle(el => el.shadowRoot);   
+        const acceptButton = await shadowRoot.evaluateHandle(root => 
+          [...root.querySelectorAll('button')].find(btn => btn.textContent.includes('Accept All'))
+      );
+      this.log("Privacy Settings popup is visible");
+      if (acceptButton) await acceptButton.click();
     }
 
     async enterCompanyName(companyName) {
@@ -77,7 +76,10 @@ class SignUpPage extends Base {
 
     async selectReason(reason) {
         await this.click(this.locators.reasonDropdown);
-        await this.click(this.locators.selectreason);
+        const selectReason = this.page.locator(this.locators.selectreason.locator.replace("{reason}", reason));
+        await selectReason.waitFor({ state: 'visible' });
+        await selectReason.hover();
+        await this.page.evaluate(el => el.click(), await selectReason.elementHandle());
     }
 
     async getPreSelectedCountry() {
@@ -93,16 +95,14 @@ class SignUpPage extends Base {
     
     async selectCountryFromDropdown(countryName) {
         const countryOption = this.page.locator(this.locators.countrySelected.locator.replace("{country}", countryName));
-    await countryOption.waitFor({ state: 'visible' });
-
-    await countryOption.hover();
-    await this.page.evaluate(el => el.click(), await countryOption.elementHandle());
+        await countryOption.waitFor({ state: 'visible' });
+        await countryOption.hover();
+        await this.page.evaluate(el => el.click(), await countryOption.elementHandle());
         
     }
 
     
     async getSelectedCountry() {
-        
         return await this.getAttribute(this.locators.countryDropdown, "value");
     }
 

@@ -29,14 +29,12 @@ class SignInPage extends Base {
 
     async acceptPrivacySetting(page) {
       
-      const shadowRoot = await page.locator("#usercentrics-root").evaluateHandle(el => el.shadowRoot);
-
-      // Click the "Accept All" button by directly locating it before clicking
-      await shadowRoot.evaluate(root => {
-          const acceptButton = [...root.querySelectorAll('button')]
-              .find(btn => btn.textContent.includes('Accept All'));
-          if (acceptButton) acceptButton.click();
-      });
+        await page.waitForSelector("div[data-testid='uc-footer']", { timeout: 7000 });
+        const shadowRoot = await page.locator("#usercentrics-root").evaluateHandle(el => el.shadowRoot);   
+        const acceptButton = await shadowRoot.evaluateHandle(root => 
+          [...root.querySelectorAll('button')].find(btn => btn.textContent.includes('Accept All'))
+      );
+      if (acceptButton) await acceptButton.click();
     }
 
 }
