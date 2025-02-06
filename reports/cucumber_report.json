@@ -1,0 +1,468 @@
+[
+  {
+    "description": "  As a user\n  I want to navigate to the Sign-Up page\n  So that I can create an account",
+    "elements": [
+      {
+        "description": "",
+        "id": "sign-up-navigation;user-navigates-to-the-sign-up-page-successfully",
+        "keyword": "Scenario",
+        "line": 6,
+        "name": "User navigates to the Sign-Up page successfully",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 550167599
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 7,
+            "name": "the user is on the login page",
+            "match": {
+              "location": "file:\\C:\\Users\\nikhi\\Desktop\\Circula\\circula-assesment\\step-definitions\\signUpSteps.js:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1268635200
+            },
+            "embeddings": [
+              {
+                "data": "TmF2aWdhdGluZyB0byBTaWduIEluIFBhZ2UuLi4=",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "TmF2aWdhdGVkIHRvOiBodHRwczovL2NpcmN1bGEtcWEtY2hhbGxlbmdlLnZlcmNlbC5hcHAvdXNlcnMvc2lnbl9pbg==",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "IENoZWNraW5nIGlmIFNpZ24gSW4gUGFnZSBpcyB2aXNpYmxlLi4u",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "IlNpZ24gaW4gcGFnZSBoZWFkZXIiIGlzIHZpc2libGU=",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "IFNpZ24gSW4gUGFnZSBpcyB2aXNpYmxlLg==",
+                "mime_type": "text/plain"
+              }
+            ]
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "the user accepts the privacy settings",
+            "match": {
+              "location": "file:\\C:\\Users\\nikhi\\Desktop\\Circula\\circula-assesment\\step-definitions\\signUpSteps.js:20"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1197918700
+            },
+            "embeddings": [
+              {
+                "data": "IENoZWNraW5nIGZvciBQcml2YWN5IFNldHRpbmdzIHBvcHVwLg==",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "IENsaWNrIG9uIEFjY2VwdCBBbGw=",
+                "mime_type": "text/plain"
+              }
+            ]
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 9,
+            "name": "the user clicks on \"Start a Free Trial\"",
+            "match": {
+              "location": "file:\\C:\\Users\\nikhi\\Desktop\\Circula\\circula-assesment\\step-definitions\\signUpSteps.js:35"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 276840600
+            },
+            "embeddings": [
+              {
+                "data": "IENoZWNraW5nIGlmICJTdGFydCBhIEZyZWUgVHJpYWwiIGJ1dHRvbiBpcyB2aXNpYmxlLi4u",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "IlNpZ24gdXAgYnV0dG9uIG9uIFNpZ24gSW4gcGFnZSIgaXMgdmlzaWJsZQ==",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "U2lnbiB1cCBidXR0b24gaXMgdmlzaWJsZQ==",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "Q2xpY2tlZCBvbiB0aGUgIlNpZ24gdXAgYnV0dG9uIG9uIFNpZ24gSW4gcGFnZSIgYnV0dG9u",
+                "mime_type": "text/plain"
+              }
+            ]
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 10,
+            "name": "the user should be redirected to the Sign-Up page",
+            "match": {
+              "location": "file:\\C:\\Users\\nikhi\\Desktop\\Circula\\circula-assesment\\step-definitions\\signUpSteps.js:43"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 935720900
+            },
+            "embeddings": [
+              {
+                "data": "8J+UhCBXYWl0aW5nIGZvciBTaWduLVVwIHBhZ2UgVVJMLi4u",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "IENoZWNraW5nIGlmIFVSTCBjb250YWlucyAnL3NpZ25fdXAnLi4u",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "IENoZWNraW5nIGlmIFNpZ24tVXAgUGFnZSBpcyB2aXNpYmxlLi4u",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "IlNpZ24gVXAgcGFnZSBoZWFkZXIiIGlzIHZpc2libGU=",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "IFVzZXIgaXMgc3VjY2Vzc2Z1bGx5IG9uIHRoZSBTaWduLVVwIHBhZ2Uu",
+                "mime_type": "text/plain"
+              }
+            ]
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 291724100
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "sign-up-navigation;verify-that-the-user-is-able-to-navigate-to-the-company-information-page",
+        "keyword": "Scenario Outline",
+        "line": 27,
+        "name": "Verify that the user is able to navigate to the Company Information page",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 618987600
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 13,
+            "name": "the user is on the Sign-Up page",
+            "match": {
+              "location": "file:\\C:\\Users\\nikhi\\Desktop\\Circula\\circula-assesment\\step-definitions\\signUpSteps.js:57"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2490343700
+            },
+            "embeddings": [
+              {
+                "data": "IE5hdmlnYXRpbmcgdG8gU2lnbi1VcCBQYWdlLi4u",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "TmF2aWdhdGVkIHRvOiBodHRwczovL2NpcmN1bGEtcWEtY2hhbGxlbmdlLnZlcmNlbC5hcHAvdXNlcnMvc2lnbl91cA==",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "IENoZWNraW5nIGlmIFNpZ24tVXAgUGFnZSBpcyB2aXNpYmxlLi4u",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "IlNpZ24gVXAgcGFnZSBoZWFkZXIiIGlzIHZpc2libGU=",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "IFNpZ24tVXAgUGFnZSBpcyB2aXNpYmxlLg==",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "IENoZWNraW5nIGZvciBQcml2YWN5IFNldHRpbmdzIHBvcHVwLg==",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "IENsaWNrIG9uIEFjY2VwdCBBbGw=",
+                "mime_type": "text/plain"
+              }
+            ]
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 14,
+            "name": "the user checks I agree to the Terms and Conditions and Privacy Policy",
+            "match": {
+              "location": "file:\\C:\\Users\\nikhi\\Desktop\\Circula\\circula-assesment\\step-definitions\\signUpSteps.js:96"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 235594399
+            },
+            "embeddings": [
+              {
+                "data": "4pyFIENoZWNraW5nIFRlcm1zIGFuZCBDb25kaXRpb25zLi4u",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "Q2xpY2tlZCBvbiB0aGUgIlRlcm1zIGFuZCBDb25kaXRpb25zIENoZWNrYm94IiBidXR0b24=",
+                "mime_type": "text/plain"
+              }
+            ]
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 15,
+            "name": "the user enters a valid work email address \"megha@circula.com\"",
+            "match": {
+              "location": "file:\\C:\\Users\\nikhi\\Desktop\\Circula\\circula-assesment\\step-definitions\\signUpSteps.js:82"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 170802299
+            },
+            "embeddings": [
+              {
+                "data": "IEVudGVyaW5nIGVtYWlsOiBtZWdoYUBjaXJjdWxhLmNvbQ==",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "RW50ZXJlZCB2YWx1ZSAibWVnaGFAY2lyY3VsYS5jb20iIG9uICJFbWFpbCBJbnB1dCBGaWVsZCI=",
+                "mime_type": "text/plain"
+              }
+            ]
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 16,
+            "name": "the user enters a valid password \"Megha@123\"",
+            "match": {
+              "location": "file:\\C:\\Users\\nikhi\\Desktop\\Circula\\circula-assesment\\step-definitions\\signUpSteps.js:89"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 118087300
+            },
+            "embeddings": [
+              {
+                "data": "IEVudGVyaW5nIHBhc3N3b3JkLi4u",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "RW50ZXJlZCB2YWx1ZSAiTWVnaGFAMTIzIiBvbiAiUGFzc3dvcmQgSW5wdXQgRmllbGQi",
+                "mime_type": "text/plain"
+              }
+            ]
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 17,
+            "name": "the user checks Iam happy to get occasional product updates",
+            "match": {
+              "location": "file:\\C:\\Users\\nikhi\\Desktop\\Circula\\circula-assesment\\step-definitions\\signUpSteps.js:103"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 148130800
+            },
+            "embeddings": [
+              {
+                "data": "4pyFIE9wdGluZyBpbiBmb3IgcHJvZHVjdCB1cGRhdGVzLi4u",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "Q2xpY2tlZCBvbiB0aGUgIlByb2R1Y3QgVXBkYXRlcyBDaGVja2JveCIgYnV0dG9u",
+                "mime_type": "text/plain"
+              }
+            ]
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 18,
+            "name": "the user clicks Try for Free",
+            "match": {
+              "location": "file:\\C:\\Users\\nikhi\\Desktop\\Circula\\circula-assesment\\step-definitions\\signUpSteps.js:110"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 103539499
+            },
+            "embeddings": [
+              {
+                "data": "Q2xpY2tpbmcgJ1RyeSBmb3IgRnJlZScgYnV0dG9uLi4u",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "Q2xpY2tlZCBvbiB0aGUgIlRyeSBmb3IgRnJlZSBCdXR0b24iIGJ1dHRvbg==",
+                "mime_type": "text/plain"
+              }
+            ]
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 19,
+            "name": "the user enters First Name \"Megha\"",
+            "match": {
+              "location": "file:\\C:\\Users\\nikhi\\Desktop\\Circula\\circula-assesment\\step-definitions\\signUpSteps.js:117"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1897426199
+            },
+            "embeddings": [
+              {
+                "data": "IEVudGVyaW5nIEZpcnN0IE5hbWU6IE1lZ2hh",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "RW50ZXJlZCB2YWx1ZSAiTWVnaGEiIG9uICJGaXJzdCBOYW1lIElucHV0IEZpZWxkIg==",
+                "mime_type": "text/plain"
+              }
+            ]
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 20,
+            "name": "the user enters Last Name \"Vernekar\"",
+            "match": {
+              "location": "file:\\C:\\Users\\nikhi\\Desktop\\Circula\\circula-assesment\\step-definitions\\signUpSteps.js:124"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 93369200
+            },
+            "embeddings": [
+              {
+                "data": "8J+TnSBFbnRlcmluZyBMYXN0IE5hbWU6IFZlcm5la2Fy",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "RW50ZXJlZCB2YWx1ZSAiVmVybmVrYXIiIG9uICJMYXN0IE5hbWUgSW5wdXQgRmllbGQi",
+                "mime_type": "text/plain"
+              }
+            ]
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 21,
+            "name": "the user enters Phone Number \"12345678\"",
+            "match": {
+              "location": "file:\\C:\\Users\\nikhi\\Desktop\\Circula\\circula-assesment\\step-definitions\\signUpSteps.js:131"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 71549899
+            },
+            "embeddings": [
+              {
+                "data": "IEVudGVyaW5nIFBob25lIE51bWJlcjogMTIzNDU2Nzg=",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "RW50ZXJlZCB2YWx1ZSAiMTIzNDU2NzgiIG9uICJQaG9uZSBOdW1iZXIgSW5wdXQgRmllbGQi",
+                "mime_type": "text/plain"
+              }
+            ]
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 22,
+            "name": "the user clicks on Next Step",
+            "match": {
+              "location": "file:\\C:\\Users\\nikhi\\Desktop\\Circula\\circula-assesment\\step-definitions\\signUpSteps.js:137"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 252454400
+            },
+            "embeddings": [
+              {
+                "data": "IENsaWNraW5nICdOZXh0IFN0ZXAnIGJ1dHRvbi4uLg==",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "Q2xpY2tlZCBvbiB0aGUgIk5leHQgU3RlcCBCdXR0b24iIGJ1dHRvbg==",
+                "mime_type": "text/plain"
+              }
+            ]
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 23,
+            "name": "the user should be successfully navigated to the Company Information page",
+            "match": {
+              "location": "file:\\C:\\Users\\nikhi\\Desktop\\Circula\\circula-assesment\\step-definitions\\signUpSteps.js:144"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4849700
+            },
+            "embeddings": [
+              {
+                "data": "IFdhaXRpbmcgZm9yIENvbXBhbnkgSW5mb3JtYXRpb24gZGV0YWlscyB0byBsb2FkLi4u",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "IkNvbXBhbnkgSW5mb3JtYXRpb24gUGFnZSBIZWFkZXIiIGlzIHZpc2libGU=",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "8J+foiBTdWNjZXNzZnVsbHkgbmF2aWdhdGVkIHRvIENvbXBhbnkgSW5mb3JtYXRpb24gZGV0YWlscy4=",
+                "mime_type": "text/plain"
+              }
+            ]
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 401417699
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "sign-up-navigation",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Sign-Up Navigation",
+    "tags": [],
+    "uri": "features\\signUp.feature"
+  }
+]
