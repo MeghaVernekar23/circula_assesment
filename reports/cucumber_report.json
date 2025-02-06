@@ -14,7 +14,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 550167599
+              "duration": 2302272200
             }
           },
           {
@@ -27,7 +27,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1268635200
+              "duration": 3976620399
             },
             "embeddings": [
               {
@@ -62,7 +62,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1197918700
+              "duration": 724677299
             },
             "embeddings": [
               {
@@ -85,7 +85,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 276840600
+              "duration": 523181299
             },
             "embeddings": [
               {
@@ -116,7 +116,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 935720900
+              "duration": 1103243699
             },
             "embeddings": [
               {
@@ -146,7 +146,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 291724100
+              "duration": 1865692299
             }
           }
         ],
@@ -165,7 +165,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 618987600
+              "duration": 22284549899
             }
           },
           {
@@ -178,7 +178,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2490343700
+              "duration": 5266334900
             },
             "embeddings": [
               {
@@ -221,11 +221,11 @@
             },
             "result": {
               "status": "passed",
-              "duration": 235594399
+              "duration": 802954400
             },
             "embeddings": [
               {
-                "data": "4pyFIENoZWNraW5nIFRlcm1zIGFuZCBDb25kaXRpb25zLi4u",
+                "data": "Q2hlY2tpbmcgVGVybXMgYW5kIENvbmRpdGlvbnMuLi4=",
                 "mime_type": "text/plain"
               },
               {
@@ -244,7 +244,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 170802299
+              "duration": 162006699
             },
             "embeddings": [
               {
@@ -267,7 +267,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 118087300
+              "duration": 101305800
             },
             "embeddings": [
               {
@@ -290,11 +290,11 @@
             },
             "result": {
               "status": "passed",
-              "duration": 148130800
+              "duration": 136256300
             },
             "embeddings": [
               {
-                "data": "4pyFIE9wdGluZyBpbiBmb3IgcHJvZHVjdCB1cGRhdGVzLi4u",
+                "data": "T3B0aW5nIGluIGZvciBwcm9kdWN0IHVwZGF0ZXMuLi4=",
                 "mime_type": "text/plain"
               },
               {
@@ -313,7 +313,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 103539499
+              "duration": 131915000
             },
             "embeddings": [
               {
@@ -336,7 +336,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1897426199
+              "duration": 1771609100
             },
             "embeddings": [
               {
@@ -359,7 +359,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 93369200
+              "duration": 231408900
             },
             "embeddings": [
               {
@@ -382,7 +382,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 71549899
+              "duration": 240213199
             },
             "embeddings": [
               {
@@ -405,7 +405,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 252454400
+              "duration": 375193599
             },
             "embeddings": [
               {
@@ -428,7 +428,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 4849700
+              "duration": 46582099
             },
             "embeddings": [
               {
@@ -450,7 +450,602 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 401417699
+              "duration": 485523699
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "sign-up-navigation;verify-that-the-company-information-section-allows-entering-details",
+        "keyword": "Scenario Outline",
+        "line": 40,
+        "name": "Verify that the Company Information section allows entering details",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1785207299
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 30,
+            "name": "the user is on the Sign-Up page",
+            "match": {
+              "location": "file:\\C:\\Users\\nikhi\\Desktop\\Circula\\circula-assesment\\step-definitions\\signUpSteps.js:57"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4045132700
+            },
+            "embeddings": [
+              {
+                "data": "IE5hdmlnYXRpbmcgdG8gU2lnbi1VcCBQYWdlLi4u",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "TmF2aWdhdGVkIHRvOiBodHRwczovL2NpcmN1bGEtcWEtY2hhbGxlbmdlLnZlcmNlbC5hcHAvdXNlcnMvc2lnbl91cA==",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "IENoZWNraW5nIGlmIFNpZ24tVXAgUGFnZSBpcyB2aXNpYmxlLi4u",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "IlNpZ24gVXAgcGFnZSBoZWFkZXIiIGlzIHZpc2libGU=",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "IFNpZ24tVXAgUGFnZSBpcyB2aXNpYmxlLg==",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "IENoZWNraW5nIGZvciBQcml2YWN5IFNldHRpbmdzIHBvcHVwLg==",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "IENsaWNrIG9uIEFjY2VwdCBBbGw=",
+                "mime_type": "text/plain"
+              }
+            ]
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 31,
+            "name": "the user enters email address \"megha@circula.com\" password \"Megha@123\" First Name \"Megha\" Last Name \"Vernekar\" Phone Number \"12345678\"",
+            "match": {
+              "location": "file:\\C:\\Users\\nikhi\\Desktop\\Circula\\circula-assesment\\step-definitions\\signUpSteps.js:154"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2178591100
+            },
+            "embeddings": [
+              {
+                "data": "IEVudGVyaW5nIGVtYWlsOiBtZWdoYUBjaXJjdWxhLmNvbQ==",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "RW50ZXJlZCB2YWx1ZSAibWVnaGFAY2lyY3VsYS5jb20iIG9uICJFbWFpbCBJbnB1dCBGaWVsZCI=",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "IEVudGVyaW5nIHBhc3N3b3JkLi4u",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "RW50ZXJlZCB2YWx1ZSAiTWVnaGFAMTIzIiBvbiAiUGFzc3dvcmQgSW5wdXQgRmllbGQi",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "Q2hlY2tpbmcgVGVybXMgYW5kIENvbmRpdGlvbnMuLi4=",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "Q2xpY2tlZCBvbiB0aGUgIlRlcm1zIGFuZCBDb25kaXRpb25zIENoZWNrYm94IiBidXR0b24=",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "T3B0aW5nIGluIGZvciBwcm9kdWN0IHVwZGF0ZXMuLi4=",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "Q2xpY2tlZCBvbiB0aGUgIlByb2R1Y3QgVXBkYXRlcyBDaGVja2JveCIgYnV0dG9u",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "Q2xpY2tpbmcgJ1RyeSBmb3IgRnJlZScgYnV0dG9uLi4u",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "Q2xpY2tlZCBvbiB0aGUgIlRyeSBmb3IgRnJlZSBCdXR0b24iIGJ1dHRvbg==",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "IEVudGVyaW5nIEZpcnN0IE5hbWU6IE1lZ2hh",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "RW50ZXJlZCB2YWx1ZSAiTWVnaGEiIG9uICJGaXJzdCBOYW1lIElucHV0IEZpZWxkIg==",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "8J+TnSBFbnRlcmluZyBMYXN0IE5hbWU6IFZlcm5la2Fy",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "RW50ZXJlZCB2YWx1ZSAiVmVybmVrYXIiIG9uICJMYXN0IE5hbWUgSW5wdXQgRmllbGQi",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "IEVudGVyaW5nIFBob25lIE51bWJlcjogMTIzNDU2Nzg=",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "RW50ZXJlZCB2YWx1ZSAiMTIzNDU2NzgiIG9uICJQaG9uZSBOdW1iZXIgSW5wdXQgRmllbGQi",
+                "mime_type": "text/plain"
+              }
+            ]
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 32,
+            "name": "the user clicks on Next Step",
+            "match": {
+              "location": "file:\\C:\\Users\\nikhi\\Desktop\\Circula\\circula-assesment\\step-definitions\\signUpSteps.js:137"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 485478300
+            },
+            "embeddings": [
+              {
+                "data": "IENsaWNraW5nICdOZXh0IFN0ZXAnIGJ1dHRvbi4uLg==",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "Q2xpY2tlZCBvbiB0aGUgIk5leHQgU3RlcCBCdXR0b24iIGJ1dHRvbg==",
+                "mime_type": "text/plain"
+              }
+            ]
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 33,
+            "name": "the user should be successfully navigated to the Company Information page",
+            "match": {
+              "location": "file:\\C:\\Users\\nikhi\\Desktop\\Circula\\circula-assesment\\step-definitions\\signUpSteps.js:144"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 6598299
+            },
+            "embeddings": [
+              {
+                "data": "IFdhaXRpbmcgZm9yIENvbXBhbnkgSW5mb3JtYXRpb24gZGV0YWlscyB0byBsb2FkLi4u",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "IkNvbXBhbnkgSW5mb3JtYXRpb24gUGFnZSBIZWFkZXIiIGlzIHZpc2libGU=",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "8J+foiBTdWNjZXNzZnVsbHkgbmF2aWdhdGVkIHRvIENvbXBhbnkgSW5mb3JtYXRpb24gZGV0YWlscy4=",
+                "mime_type": "text/plain"
+              }
+            ]
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 34,
+            "name": "the user enters the company name \"Circula\"",
+            "match": {
+              "location": "file:\\C:\\Users\\nikhi\\Desktop\\Circula\\circula-assesment\\step-definitions\\signUpSteps.js:175"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 65398900
+            },
+            "embeddings": [
+              {
+                "data": "RW50ZXJpbmcgQ29tcGFueSBOYW1lOiBDaXJjdWxh",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "RW50ZXJlZCB2YWx1ZSAiQ2lyY3VsYSIgb24gIkNvbXBhbnkgTmFtZSBJbnB1dCBGaWVsZCI=",
+                "mime_type": "text/plain"
+              }
+            ]
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 35,
+            "name": "the user selects a reason \"Tax Advisor\" from How did you hear about us?",
+            "match": {
+              "location": "file:\\C:\\Users\\nikhi\\Desktop\\Circula\\circula-assesment\\step-definitions\\signUpSteps.js:180"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 988732300
+            },
+            "embeddings": [
+              {
+                "data": "IFNlbGVjdGluZyBSZWFzb246IFRheCBBZHZpc29y",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "Q2xpY2tlZCBvbiB0aGUgIkhvdyBEaWQgWW91IEhlYXIgQWJvdXQgVXMgRHJvcGRvd24iIGJ1dHRvbg==",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "Q2xpY2tlZCBvbiB0aGUgInNlbGVjdGVkIFRheCBBZHZpc29yIFJlYXNvbiIgYnV0dG9u",
+                "mime_type": "text/plain"
+              }
+            ]
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 36,
+            "name": "country \"Germany\" should be pre-selected in the Where is your company registered? dropdown",
+            "match": {
+              "location": "file:\\C:\\Users\\nikhi\\Desktop\\Circula\\circula-assesment\\step-definitions\\signUpSteps.js:185"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 24340400
+            },
+            "embeddings": [
+              {
+                "data": "IFZlcmlmeWluZyBwcmUtc2VsZWN0ZWQgY291bnRyeSBpbiB0aGUgZHJvcGRvd24uLi4=",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "8J+UjSBFeHRyYWN0aW5nIGF0dHJpYnV0ZSAndmFsdWUnIGZyb20gJ0NvdW50cnkgRHJvcGRvd24gRmllbGQn",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "4pyFIEV4dHJhY3RlZCAndmFsdWUnIHZhbHVlOiAiR2VybWFueSIgZnJvbSAnQ291bnRyeSBEcm9wZG93biBGaWVsZCc=",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "Q291bnRyeSBwcmUtc2VsZWN0ZWQgY29ycmVjdGx5OiBHZXJtYW55",
+                "mime_type": "text/plain"
+              }
+            ]
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 540038199
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "sign-up-navigation;verify-that-user-is-able-to-country-sweden-in-where-is-your-company-registered?-dropdown",
+        "keyword": "Scenario Outline",
+        "line": 54,
+        "name": "Verify that user is able to Country Sweden in Where is your company registered? dropdown",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 7947727700
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 43,
+            "name": "the user is on the Sign-Up page",
+            "match": {
+              "location": "file:\\C:\\Users\\nikhi\\Desktop\\Circula\\circula-assesment\\step-definitions\\signUpSteps.js:57"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5529580200
+            },
+            "embeddings": [
+              {
+                "data": "IE5hdmlnYXRpbmcgdG8gU2lnbi1VcCBQYWdlLi4u",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "TmF2aWdhdGVkIHRvOiBodHRwczovL2NpcmN1bGEtcWEtY2hhbGxlbmdlLnZlcmNlbC5hcHAvdXNlcnMvc2lnbl91cA==",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "IENoZWNraW5nIGlmIFNpZ24tVXAgUGFnZSBpcyB2aXNpYmxlLi4u",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "IlNpZ24gVXAgcGFnZSBoZWFkZXIiIGlzIHZpc2libGU=",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "IFNpZ24tVXAgUGFnZSBpcyB2aXNpYmxlLg==",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "IENoZWNraW5nIGZvciBQcml2YWN5IFNldHRpbmdzIHBvcHVwLg==",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "IENsaWNrIG9uIEFjY2VwdCBBbGw=",
+                "mime_type": "text/plain"
+              }
+            ]
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 44,
+            "name": "the user enters email address \"megha@circula.com\" password \"Megha@123\" First Name \"Megha\" Last Name \"Vernekar\" Phone Number \"12345678\"",
+            "match": {
+              "location": "file:\\C:\\Users\\nikhi\\Desktop\\Circula\\circula-assesment\\step-definitions\\signUpSteps.js:154"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1659132300
+            },
+            "embeddings": [
+              {
+                "data": "IEVudGVyaW5nIGVtYWlsOiBtZWdoYUBjaXJjdWxhLmNvbQ==",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "RW50ZXJlZCB2YWx1ZSAibWVnaGFAY2lyY3VsYS5jb20iIG9uICJFbWFpbCBJbnB1dCBGaWVsZCI=",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "IEVudGVyaW5nIHBhc3N3b3JkLi4u",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "RW50ZXJlZCB2YWx1ZSAiTWVnaGFAMTIzIiBvbiAiUGFzc3dvcmQgSW5wdXQgRmllbGQi",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "Q2hlY2tpbmcgVGVybXMgYW5kIENvbmRpdGlvbnMuLi4=",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "Q2xpY2tlZCBvbiB0aGUgIlRlcm1zIGFuZCBDb25kaXRpb25zIENoZWNrYm94IiBidXR0b24=",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "T3B0aW5nIGluIGZvciBwcm9kdWN0IHVwZGF0ZXMuLi4=",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "Q2xpY2tlZCBvbiB0aGUgIlByb2R1Y3QgVXBkYXRlcyBDaGVja2JveCIgYnV0dG9u",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "Q2xpY2tpbmcgJ1RyeSBmb3IgRnJlZScgYnV0dG9uLi4u",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "Q2xpY2tlZCBvbiB0aGUgIlRyeSBmb3IgRnJlZSBCdXR0b24iIGJ1dHRvbg==",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "IEVudGVyaW5nIEZpcnN0IE5hbWU6IE1lZ2hh",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "RW50ZXJlZCB2YWx1ZSAiTWVnaGEiIG9uICJGaXJzdCBOYW1lIElucHV0IEZpZWxkIg==",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "8J+TnSBFbnRlcmluZyBMYXN0IE5hbWU6IFZlcm5la2Fy",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "RW50ZXJlZCB2YWx1ZSAiVmVybmVrYXIiIG9uICJMYXN0IE5hbWUgSW5wdXQgRmllbGQi",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "IEVudGVyaW5nIFBob25lIE51bWJlcjogMTIzNDU2Nzg=",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "RW50ZXJlZCB2YWx1ZSAiMTIzNDU2NzgiIG9uICJQaG9uZSBOdW1iZXIgSW5wdXQgRmllbGQi",
+                "mime_type": "text/plain"
+              }
+            ]
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 45,
+            "name": "the user clicks on Next Step",
+            "match": {
+              "location": "file:\\C:\\Users\\nikhi\\Desktop\\Circula\\circula-assesment\\step-definitions\\signUpSteps.js:137"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 710175299
+            },
+            "embeddings": [
+              {
+                "data": "IENsaWNraW5nICdOZXh0IFN0ZXAnIGJ1dHRvbi4uLg==",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "Q2xpY2tlZCBvbiB0aGUgIk5leHQgU3RlcCBCdXR0b24iIGJ1dHRvbg==",
+                "mime_type": "text/plain"
+              }
+            ]
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 46,
+            "name": "the user should be successfully navigated to the Company Information page",
+            "match": {
+              "location": "file:\\C:\\Users\\nikhi\\Desktop\\Circula\\circula-assesment\\step-definitions\\signUpSteps.js:144"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 8227200
+            },
+            "embeddings": [
+              {
+                "data": "IFdhaXRpbmcgZm9yIENvbXBhbnkgSW5mb3JtYXRpb24gZGV0YWlscyB0byBsb2FkLi4u",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "IkNvbXBhbnkgSW5mb3JtYXRpb24gUGFnZSBIZWFkZXIiIGlzIHZpc2libGU=",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "8J+foiBTdWNjZXNzZnVsbHkgbmF2aWdhdGVkIHRvIENvbXBhbnkgSW5mb3JtYXRpb24gZGV0YWlscy4=",
+                "mime_type": "text/plain"
+              }
+            ]
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 47,
+            "name": "the user enters the company name \"Circula\" selects a reason \"Tax Advisor\" from How did you hear about us?",
+            "match": {
+              "location": "file:\\C:\\Users\\nikhi\\Desktop\\Circula\\circula-assesment\\step-definitions\\signUpSteps.js:192"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1355574299
+            },
+            "embeddings": [
+              {
+                "data": "RW50ZXJpbmcgQ29tcGFueSBOYW1lOiBDaXJjdWxh",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "RW50ZXJlZCB2YWx1ZSAiQ2lyY3VsYSIgb24gIkNvbXBhbnkgTmFtZSBJbnB1dCBGaWVsZCI=",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "IFNlbGVjdGluZyBSZWFzb246IFRheCBBZHZpc29y",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "Q2xpY2tlZCBvbiB0aGUgIkhvdyBEaWQgWW91IEhlYXIgQWJvdXQgVXMgRHJvcGRvd24iIGJ1dHRvbg==",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "Q2xpY2tlZCBvbiB0aGUgInNlbGVjdGVkIFRheCBBZHZpc29yIFJlYXNvbiIgYnV0dG9u",
+                "mime_type": "text/plain"
+              }
+            ]
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 48,
+            "name": "country \"Sweden\" should be present in dropdown list of Where is your company registered? dropdown",
+            "match": {
+              "location": "file:\\C:\\Users\\nikhi\\Desktop\\Circula\\circula-assesment\\step-definitions\\signUpSteps.js:200"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1106567800
+            },
+            "embeddings": [
+              {
+                "data": "IENoZWNraW5nIGlmIGNvdW50cnkgIlN3ZWRlbiIgaXMgYXZhaWxhYmxlIGluIHRoZSBkcm9wZG93biBsaXN0Li4u",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "Q2xpY2tlZCBvbiB0aGUgIkNvdW50cnkgRHJvcGRvd24gRmllbGQiIGJ1dHRvbg==",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "IENvdW50cnkgIlN3ZWRlbiIgaXMgYXZhaWxhYmxlIGluIHRoZSBkcm9wZG93biBsaXN0Lg==",
+                "mime_type": "text/plain"
+              }
+            ]
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 49,
+            "name": "the user selects country \"Sweden\" from the dropdown list",
+            "match": {
+              "location": "file:\\C:\\Users\\nikhi\\Desktop\\Circula\\circula-assesment\\step-definitions\\signUpSteps.js:209"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 214473200
+            },
+            "embeddings": [
+              {
+                "data": "IFNlbGVjdGluZyBjb3VudHJ5ICJTd2VkZW4iIGZyb20gdGhlIGRyb3Bkb3duIGxpc3QuLi4=",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "IENvdW50cnkgIlN3ZWRlbiIgc2VsZWN0ZWQgc3VjY2Vzc2Z1bGx5Lg==",
+                "mime_type": "text/plain"
+              }
+            ]
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 50,
+            "name": "country \"Sweden\" should be selected in the Where is your company registered? dropdown",
+            "match": {
+              "location": "file:\\C:\\Users\\nikhi\\Desktop\\Circula\\circula-assesment\\step-definitions\\signUpSteps.js:215"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 16694299
+            },
+            "embeddings": [
+              {
+                "data": "IFZlcmlmeWluZyB0aGUgc2VsZWN0ZWQgY291bnRyeSBpbiB0aGUgZHJvcGRvd24uLi4=",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "8J+UjSBFeHRyYWN0aW5nIGF0dHJpYnV0ZSAndmFsdWUnIGZyb20gJ0NvdW50cnkgRHJvcGRvd24gRmllbGQn",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "4pyFIEV4dHJhY3RlZCAndmFsdWUnIHZhbHVlOiAiU3dlZGVuIiBmcm9tICdDb3VudHJ5IERyb3Bkb3duIEZpZWxkJw==",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "IFNlbGVjdGVkIGNvdW50cnkgaXMgY29ycmVjdDogIlN3ZWRlbiI=",
+                "mime_type": "text/plain"
+              }
+            ]
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 637334099
             }
           }
         ],
