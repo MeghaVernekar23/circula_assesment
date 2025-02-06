@@ -1,9 +1,50 @@
 {
     "signUpHeader": {
-      "locatorOptions": {},
       "locator": "xpath=//h1[text()='Start your 14-day free trial']",
-      "description": "Sign Up page header",
-      "actionOptions": {}
+      "description": "Sign Up page header"
+    },
+    "emailInput": {
+        "locator": "//input[@type='email']",
+        "description": "Email Input Field"
+    },
+
+    "passwordInput": {
+        "locator": "//input[@type='password']",
+        "description": "Password Input Field"
+    },
+    "termsCheckbox": {
+        "locator": "//input[@type='checkbox' and @name='acceptTos']//following-sibling::div[1]",
+        "description": "Terms and Conditions Checkbox"
+    },
+    "productUpdatesCheckbox": {
+        "locator": "//input[@type='checkbox' and @name='sendNewsletter']//following-sibling::div[1]",
+        "description": "Product Updates Checkbox"
+    },
+    "tryForFreeButton": {
+        "locator": "//button[contains(text(),'Try for free')]",
+        "description": "Try for Free Button"
+    },
+    "firstNameInput": {
+        "locator": "//input[@type='text' and @name='firstname']",
+        "description": "First Name Input Field"
+    },
+    "lastNameInput": {
+        "locator": "//input[@type='text' and @name='lastname']",
+        "description": "Last Name Input Field"
+    },
+    "phoneNumberInput": {
+        "locator": "//input[@type='tel' and @name='phoneNumber']",
+        "description": "Phone Number Input Field"
+    },
+    "nextStepButton": {
+        "locator": "//button[@type='submit']",
+        "description": "Next Step Button"
+    },
+
+    "companyInfoHeader": {
+        "locator": "//h1[contains(text(),'Company information')]",
+        "description": "Company Information Page Header"
     }
+
   
   }

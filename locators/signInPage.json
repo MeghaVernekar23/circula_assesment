@@ -1,0 +1,13 @@
+{
+    "signInHeader": {
+      "locator": "xpath=//h1[text()='Sign in to your account']",
+      "description": "Sign in page header"
+    },
+
+    "signUpButton": {
+      "locator": "xpath=//a[text()='Start a free trial']",
+      "description": "Sign up button on Sign In page"
+    }
+
+  }
+  
