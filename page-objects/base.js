@@ -7,11 +7,11 @@ export default class Base {
         if (!page) throw new Error("Page instance is required for Base class.");
         this.page = page;
         this.baseUrl = process.env.BASE_URL;
-        this.log = logFunction || console.log; 
+        this.log = logFunction; 
     }
 
     async click(object) {
-        await this.getLocator(object).click(object["actOptions"]);
+        await this.getLocator(object).click();
         this.log(`Clicked on the "${object["description"]}" button`);
     }
 
@@ -45,14 +45,15 @@ export default class Base {
         this.log(`Navigated to: ${this.baseUrl}${path}`);
     }
 
-    getLocator(object) {
-        return this.page.locator(object["locator"], object["locatorOptions"]);
-    }
-
+    
     async getAttribute(object, attribute) {
-        this.log(`🔍 Extracting attribute '${attribute}' from '${object["description"]}'`);
-        const value = await this.page.locator(object["locator"]).getAttribute(attribute);
-        this.log(`✅ Extracted '${attribute}' value: "${value}" from '${object["description"]}'`);
+        const value = await this.getLocator(object).getAttribute(attribute);
+        this.log(`Extracted '${attribute}' value: "${value}" from '${object["description"]}'`);
         return value;
     }
+
+    getLocator(object) {
+        return this.page.locator(object["locator"]);
+    }
+
 }
