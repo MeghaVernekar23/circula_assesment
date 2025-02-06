@@ -1,0 +1,9 @@
+{
+    "signUpHeader": {
+      "locatorOptions": {},
+      "locator": "xpath=//h1[text()='Start your 14-day free trial']",
+      "description": "Sign Up page header",
+      "actionOptions": {}
+    }
+  
+  }
