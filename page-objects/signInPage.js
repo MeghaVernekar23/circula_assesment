@@ -11,7 +11,7 @@ class SignInPage extends Base {
     async navigateToSignInPage() {
         await this.navigate('/users/sign_in');
         await this.page.waitForLoadState('load');
-        await this.page.waitForLoadState('networkidle');
+        
     }
 
     async isSignInPageVisible() {
@@ -25,6 +25,18 @@ class SignInPage extends Base {
 
     async clickSignUpBtn() {
         await this.click(this.locators.signUpButton);
+    }
+
+    async acceptPrivacySetting(page) {
+      
+      const shadowRoot = await page.locator("#usercentrics-root").evaluateHandle(el => el.shadowRoot);
+
+      // Click the "Accept All" button by directly locating it before clicking
+      await shadowRoot.evaluate(root => {
+          const acceptButton = [...root.querySelectorAll('button')]
+              .find(btn => btn.textContent.includes('Accept All'));
+          if (acceptButton) acceptButton.click();
+      });
     }
 
 }
