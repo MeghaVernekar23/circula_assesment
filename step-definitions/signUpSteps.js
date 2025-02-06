@@ -6,7 +6,7 @@ import SignInPage from '../page-objects/signInPage.js';
 
 let page, signInPage , signUpPage ;
 
-  Given('the user is on the login page', async function () {
+Given('the user is on the login page', async function () {
     page = getPage();
     signInPage = new SignInPage(page, this.attach);
     this.attach("Navigating to Sign In Page...");
@@ -95,14 +95,14 @@ let page, signInPage , signUpPage ;
 
   When('the user checks I agree to the Terms and Conditions and Privacy Policy',async function () {
     
-    this.attach("✅ Checking Terms and Conditions...");
+    this.attach("Checking Terms and Conditions...");
     await signUpPage.agreeToTerms();
   });
 
 
   When('the user checks Iam happy to get occasional product updates',async function () {
     
-    this.attach("✅ Opting in for product updates...");
+    this.attach("Opting in for product updates...");
     await signUpPage.agreeToProductUpdates();
   });
 
@@ -149,4 +149,76 @@ let page, signInPage , signUpPage ;
     this.attach("🟢 Successfully navigated to Company Information details.");
   });
     
+ 
 
+    When('the user enters email address {string} password {string} First Name {string} Last Name {string} Phone Number {string}', 
+      async function (email, password, firstName, lastName, phoneNumber) {
+        this.attach(` Entering email: ${email}`);
+        await signUpPage.enterEmail(email);
+        this.attach(" Entering password...");
+        await signUpPage.enterPassword(password);
+        this.attach("Checking Terms and Conditions...");
+        await signUpPage.agreeToTerms();
+        this.attach("Opting in for product updates...");
+        await signUpPage.agreeToProductUpdates();
+        this.attach("Clicking 'Try for Free' button...");
+        await signUpPage.clickTryForFree();
+        this.attach(` Entering First Name: ${firstName}`);
+        await signUpPage.enterFirstName(firstName);
+        this.attach(`📝 Entering Last Name: ${lastName}`);
+        await signUpPage.enterLastName(lastName);
+        this.attach(` Entering Phone Number: ${phoneNumber}`);
+        await signUpPage.enterPhoneNumber(phoneNumber);
+    });
+    
+
+    When('the user enters the company name {string}',async function (companyName) {
+      this.attach(`Entering Company Name: ${companyName}`);
+      await signUpPage.enterCompanyName(companyName);
+    });
+
+    When('the user selects a reason {string} from How did you hear about us?',async function (reason) {
+      this.attach(` Selecting Reason: ${reason}`);
+      await signUpPage.selectReason(reason);
+    });
+
+    When('country {string} should be pre-selected in the Where is your company registered? dropdown',async function (expectedCountry) {
+      this.attach(" Verifying pre-selected country in the dropdown...");
+      const selectedCountry = await signUpPage.getPreSelectedCountry();
+      expect(selectedCountry).to.equal(expectedCountry);
+      this.attach(`Country pre-selected correctly: ${selectedCountry}`);
+    });
+
+    When('the user enters the company name {string} selects a reason {string} from How did you hear about us?', 
+      async function (companyName, reason) {
+      this.attach(`Entering Company Name: ${companyName}`);
+      await signUpPage.enterCompanyName(companyName);
+      this.attach(` Selecting Reason: ${reason}`);
+      await signUpPage.selectReason(reason);
+    });
+
+    When('country {string} should be present in dropdown list of Where is your company registered? dropdown', 
+      async function (country) {
+      this.attach(` Checking if country "${country}" is available in the dropdown list...`);
+      const isCountryPresent = await signUpPage.isCountryInDropdown(country);
+      
+      expect(isCountryPresent).to.be.true;
+      this.attach(` Country "${country}" is available in the dropdown list.`);
+    });
+
+    When('the user selects country {string} from the dropdown list',async function (country) {
+      this.attach(` Selecting country "${country}" from the dropdown list...`);
+      await signUpPage.selectCountryFromDropdown(country);
+      this.attach(` Country "${country}" selected successfully.`);
+    });
+
+    When('country {string} should be selected in the Where is your company registered? dropdown',
+      async function (expectedCountry) {   
+        this.attach(" Verifying the selected country in the dropdown...");
+        const selectedCountry = await signUpPage.getSelectedCountry();
+        
+        expect(selectedCountry).to.equal(expectedCountry);
+        this.attach(` Selected country is correct: "${selectedCountry}"`);
+    });
+
+    
