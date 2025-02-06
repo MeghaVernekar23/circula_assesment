@@ -53,7 +53,7 @@ class SignUpPage extends Base {
     }
 
     async clickNextStep() {
-        await this.click(this.locators.nextStepButton);
+        await this.forceClick(this.locators.nextStepButton);
     }
 
     async isCompanyInfoDetailsVisible() {
@@ -69,6 +69,41 @@ class SignUpPage extends Base {
     );
 
     if (acceptButton) await acceptButton.click();
+    }
+
+    async enterCompanyName(companyName) {
+        await this.type(this.locators.companyNameInput, companyName);
+    }
+
+    async selectReason(reason) {
+        await this.click(this.locators.reasonDropdown);
+        await this.click(this.locators.selectreason);
+    }
+
+    async getPreSelectedCountry() {
+        return await this.getAttribute(this.locators.countryDropdown, "value");
+    }
+
+    async isCountryInDropdown(countryName) {
+        await this.click(this.locators.countryDropdown);
+        const countryOptions = await this.page.locator(this.locators.countryDropdownOptions.locator).allTextContents();
+        return countryOptions.includes(countryName);
+    }
+
+    
+    async selectCountryFromDropdown(countryName) {
+        const countryOption = this.page.locator(this.locators.countrySelected.locator.replace("{country}", countryName));
+    await countryOption.waitFor({ state: 'visible' });
+
+    await countryOption.hover();
+    await this.page.evaluate(el => el.click(), await countryOption.elementHandle());
+        
+    }
+
+    
+    async getSelectedCountry() {
+        
+        return await this.getAttribute(this.locators.countryDropdown, "value");
     }
 
 }

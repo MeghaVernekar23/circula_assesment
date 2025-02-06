@@ -16,6 +16,7 @@ export default class Base {
     }
 
     async forceClick(object) {
+        await this.getLocator(object).waitFor({ state: 'visible' });
         await this.getLocator(object).click({ force: true });
         this.log(`Clicked on the "${object["description"]}" button`);
     }
@@ -46,5 +47,12 @@ export default class Base {
 
     getLocator(object) {
         return this.page.locator(object["locator"], object["locatorOptions"]);
+    }
+
+    async getAttribute(object, attribute) {
+        this.log(`🔍 Extracting attribute '${attribute}' from '${object["description"]}'`);
+        const value = await this.page.locator(object["locator"]).getAttribute(attribute);
+        this.log(`✅ Extracted '${attribute}' value: "${value}" from '${object["description"]}'`);
+        return value;
     }
 }
