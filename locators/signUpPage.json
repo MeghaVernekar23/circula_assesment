@@ -44,7 +44,36 @@
     "companyInfoHeader": {
         "locator": "//h1[contains(text(),'Company information')]",
         "description": "Company Information Page Header"
+    },
+    "companyNameInput": {
+        "locator": "//input[@name='organizationName']",
+        "description": "Company Name Input Field"
+    },
+    "reasonDropdown": {
+        "locator": "//input[@type='button' and @value='Choose channel']",
+        "description": "How Did You Hear About Us Dropdown"
+    },
+    "selectreason": {
+        "locator": "//div[@role='menuitemradio']/div[text()='Tax Advisor']",
+        "description": "selected Tax Advisor Reason"
     }
+    ,
+    "countryDropdown": {
+        "locator": "//input[@name='country']",
+        "description": "Country Dropdown Field"
+    },
+
+    "countryDropdownOptions": {
+        "locator": "//div[@data-testid='autocomplete-menu-portal']/ul/li/div",
+        "description": "Country Dropdown Options"
+    },
+
+    "countrySelected": {
+        "locator": "//div[@data-testid='autocomplete-menu-portal']/ul/li/div[text()='{country}']",
+        "description": "Sweden"
+    }
+
+
 
   
   }
