@@ -1,7 +1,7 @@
 Feature: Sign-Up Navigation
   As a user
   I want to navigate to the Sign-Up page
-  So that I can create an account
+  So that user is able to select Country in 'Where is your company registered?' dropdown
 
   Scenario: User navigates to the Sign-Up page successfully
     Given the user is on the login page
@@ -11,9 +11,9 @@ Feature: Sign-Up Navigation
 
   Scenario Outline: Verify that the user is able to navigate to the Company Information page
     Given the user is on the Sign-Up page
-    When the user checks I agree to the Terms and Conditions and Privacy Policy
-    And the user enters a valid work email address "<Email Address>"
+    When the user enters a valid work email address "<Email Address>"
     And the user enters a valid password "<Password>"
+    And the user checks I agree to the Terms and Conditions and Privacy Policy
     And the user checks Iam happy to get occasional product updates
     And the user clicks Try for Free
     And the user enters First Name "<First Name>"
@@ -39,7 +39,7 @@ Feature: Sign-Up Navigation
       | Email Address     | Password  | First Name | Last Name | Phone Number | Company Name | reason      | country |
       | megha@circula.com | Megha@123 | Megha      | Vernekar  |     12345678 | Circula      | Tax Advisor | Germany |
 
-  Scenario Outline: Verify that user is able to Country Sweden in Where is your company registered? dropdown
+  Scenario Outline: Verify that user is able to select Country Sweden in Where is your company registered? dropdown
     Given the user is on the Sign-Up page
     When the user enters email address "<Email Address>" password "<Password>" First Name "<First Name>" Last Name "<Last Name>" Phone Number "<Phone Number>"
     And the user clicks on Next Step

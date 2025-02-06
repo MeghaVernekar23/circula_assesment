@@ -1,7 +1,7 @@
 {
     "signUpHeader": {
       "locator": "xpath=//h1[text()='Start your 14-day free trial']",
-      "description": "Sign Up page header"
+      "description": "Sign Up page header(Start your 14-day free trial)"
     },
     "emailInput": {
         "locator": "//input[@type='email']",
@@ -43,7 +43,7 @@
 
     "companyInfoHeader": {
         "locator": "//h1[contains(text(),'Company information')]",
-        "description": "Company Information Page Header"
+        "description": "Company Information Details Header"
     },
     "companyNameInput": {
         "locator": "//input[@name='organizationName']",
@@ -54,7 +54,7 @@
         "description": "How Did You Hear About Us Dropdown"
     },
     "selectreason": {
-        "locator": "//div[@role='menuitemradio']/div[text()='Tax Advisor']",
+        "locator": "//div[@role='menuitemradio']/div[text()='{reason}']",
         "description": "selected Tax Advisor Reason"
     }
     ,
@@ -70,7 +70,7 @@
 
     "countrySelected": {
         "locator": "//div[@data-testid='autocomplete-menu-portal']/ul/li/div[text()='{country}']",
-        "description": "Sweden"
+        "description": "Select country from dropdown"
     }
 
 

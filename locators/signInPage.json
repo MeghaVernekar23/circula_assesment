@@ -6,8 +6,10 @@
 
     "signUpButton": {
       "locator": "xpath=//a[text()='Start a free trial']",
-      "description": "Sign up button on Sign In page"
+      "description": "Start a Free Trial"
     }
+   
+
 
   }
   
