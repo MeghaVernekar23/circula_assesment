@@ -47,7 +47,7 @@ Feature: Sign-Up Navigation
     And the user enters the company name "<Company Name>" selects a reason "<reason>" from How did you hear about us?
     And country "<country>" should be present in dropdown list of Where is your company registered? dropdown
     And the user selects country "<country>" from the dropdown list
-    And country "<country>" should be selected in the Where is your company registered? dropdown
+    And selected country "<country>" should be displayed in the Where is your company registered? dropdown
 
     Examples:
       | Email Address     | Password  | First Name | Last Name | Phone Number | Company Name | reason      | country |
