@@ -49,7 +49,7 @@ circula_ASSESMENT_TASK
 ### Prerequisite:
 
 Ensure you have the following installed:
-- ✅ [Node.js (v18+)](https://nodejs.org/en/)
+- ✅ [Node.js](https://nodejs.org/en/)
 - ✅ [Git](https://git-scm.com/)
 - ✅ A package manager (preferrably **npm**)
 
