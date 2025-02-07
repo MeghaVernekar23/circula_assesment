@@ -51,4 +51,4 @@ Feature: Sign-Up Navigation
 
     Examples:
       | Email Address     | Password  | First Name | Last Name | Phone Number | Company Name | reason      | country |
-      | megha@circula.com | Megha@123 | Megha      | Vernekar  |     12345678 | Circula      | Tax Advisor | Sweden  |
+      | megha@circula.com | Megha@123 | Megha      | Vernekar  |     12345678 | TestCompany  | Tax Advisor | Sweden  |
