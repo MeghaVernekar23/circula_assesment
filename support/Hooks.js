@@ -1,7 +1,7 @@
 import { setDefaultTimeout, BeforeAll, Before, After, AfterAll, Status } from '@cucumber/cucumber';
 import { chromium, firefox, webkit } from 'playwright';
 import dotenv from 'dotenv';
-
+import { execSync } from 'child_process';
 dotenv.config();
 
 setDefaultTimeout(1000 * 60 * 2);
@@ -18,10 +18,8 @@ function getBrowserType() {
             return chromium;
         case 'firefox':
             return firefox;
-        case 'webkit':
-            return webkit;
         default:
-            console.warn(`Unsupported browser type "${browserType}". Falling back to Chromium.`);
+            console.warn(`Unsupported browser type "${browserType}".`);
             return chromium;
     }
 }
@@ -70,9 +68,18 @@ After(async function (scenario) {
 AfterAll(async function () {
     if (browser) {
         await browser.close();
+    }
 
+});
+
+process.on('exit', () => {
+    try {
+        execSync("node generate-report.js", { stdio: "inherit" });
+    } catch (error) {
+        console.error(" Error generating Cucumber report:", error.message);
     }
 });
+
 
 
 export function getPage() {
