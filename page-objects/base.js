@@ -3,11 +3,10 @@ import dotenv from 'dotenv';
 
 export default class Base {
 
-    constructor(page, logFunction) {
+    constructor(page) {
         if (!page) throw new Error("Page instance is required for Base class.");
         this.page = page;
         this.baseUrl = process.env.BASE_URL;
-        this.log = logFunction; 
     }
 
     async click(object) {
@@ -19,12 +18,12 @@ export default class Base {
         await this.getLocator(object).click({ force: true });
     }
 
-    
+
     async type(object, text) {
         await this.getLocator(object).fill(text);
     }
 
-    
+
     async getText(object) {
         const text = await this.getLocator(object).innerText();
         return text;
@@ -39,7 +38,7 @@ export default class Base {
         await this.page.goto(`${this.baseUrl}${path}`);
     }
 
-    
+
     async getAttribute(object, attribute) {
         const value = await this.getLocator(object).getAttribute(attribute);
         return value;
