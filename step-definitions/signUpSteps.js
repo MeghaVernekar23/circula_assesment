@@ -8,15 +8,17 @@ let page, signInPage, signUpPage;
 
 Given('the user is on the login page', async function () {
   page = getPage();
-  signInPage = new SignInPage(page, this.attach);
+  signInPage = new SignInPage(page);
   this.attach(" Navigating to Sign In Page...");
   await signInPage.navigateToSignInPage();
   this.attach(" Navigated to Sign In Page.");
+
   this.attach(" Checking if Sign In Page is visible...");
   const signinPageVisible = await signInPage.isSignInPageVisible();
   expect(signinPageVisible).to.be.true;
   this.attach(" Sign In Page is visible.Verified Header 'Sign in to your account.'");
-
+  const screenshot = await page.screenshot();
+  this.attach(screenshot, 'image/png');
 });
 
 Given('the user accepts the privacy settings', async function () {
@@ -31,9 +33,12 @@ Then('the user clicks on {string}', async function (string) {
   const signupBtn = await signInPage.isSignUpBtnVisisble();
   expect(signupBtn).to.be.true;
   this.attach(` "${string}" button is visible.`);
+
   this.attach(` Clicking on "${string}" button...`);
   await signInPage.clickSignUpBtn();
   this.attach(` Clicked on "${string}" button.`);
+  const screenshot = await page.screenshot();
+  this.attach(screenshot, 'image/png');
 });
 
 Then('the user should be redirected to the Sign-Up page', async function () {
@@ -41,12 +46,16 @@ Then('the user should be redirected to the Sign-Up page', async function () {
   this.attach(" Waiting for Sign-Up page URL...");
   await page.waitForURL('https://circula-qa-challenge.vercel.app/users/sign_up');
   this.attach(" Navigated to Sign-Up page URL.");
+
   this.attach(" Checking if URL contains '/sign_up'...");
   expect(page.url()).to.include('/sign_up');
   this.attach(" URL contains '/sign_up'.");
+
   this.attach(" Checking if Sign-Up Page is visible...");
   const isVisible = await signUpPage.isSignUpPageVisible();
   expect(isVisible).to.be.true;
+  const screenshot = await page.screenshot();
+  this.attach(screenshot, 'image/png');
   this.attach(" Sign-Up Page is visible.");
   this.attach(" User is successfully on the Sign-Up page.");
 });
@@ -98,6 +107,8 @@ Then('the user checks Iam happy to get occasional product updates', async functi
   this.attach(" Opting in for product updates(Iam happy to get occasional product updates)...");
   await signUpPage.agreeToProductUpdates();
   this.attach(" Opted in for product updates(Iam happy to get occasional product updates).");
+  const screenshot = await page.screenshot();
+  this.attach(screenshot, 'image/png');
 });
 
 
@@ -110,6 +121,9 @@ Then('the user clicks Try for Free', async function () {
 
 Then('the user enters First Name {string}', async function (firstName) {
   this.attach(" Successfully naviagted to Contact Details.");
+  const screenshot = await page.screenshot();
+  this.attach(screenshot, 'image/png');
+  
   this.attach(` Entering First Name: ${firstName}...`);
   await signUpPage.enterFirstName(firstName);
   this.attach(` Entered First Name.`);
@@ -129,6 +143,8 @@ Then('the user enters Phone Number {string}', async function (phoneNumber) {
   this.attach(` Entering Phone Number: ${phoneNumber}...`);
   await signUpPage.enterPhoneNumber(phoneNumber);
   this.attach(` Entered Phone Number.`);
+  const screenshot = await page.screenshot();
+  this.attach(screenshot, 'image/png');
 });
 
 Then('the user clicks on Next Step', async function () {
@@ -136,6 +152,8 @@ Then('the user clicks on Next Step', async function () {
   this.attach(" Clicking 'Next Step' button...");
   await signUpPage.clickNextStep();
   this.attach(" Clicked 'Next Step' button...");
+  const screenshot = await page.screenshot();
+  this.attach(screenshot, 'image/png');
 });
 
 
@@ -145,6 +163,8 @@ Then('the user should be successfully navigated to the Company Information page'
   const isCompanyInfoVisible = await signUpPage.isCompanyInfoDetailsVisible();
   expect(isCompanyInfoVisible).to.be.true;
   this.attach(" Successfully navigated to Company Information details.");
+  const screenshot = await page.screenshot();
+  this.attach(screenshot, 'image/png');
 });
 
 
@@ -167,6 +187,8 @@ When('the user enters email address {string} password {string} First Name {strin
     await signUpPage.enterLastName(lastName);
     this.attach(` Entering Phone Number: ${phoneNumber}...`);
     await signUpPage.enterPhoneNumber(phoneNumber);
+    const screenshot = await page.screenshot();
+    this.attach(screenshot, 'image/png');
   });
 
 
@@ -187,6 +209,8 @@ Then('country {string} should be pre-selected in the Where is your company regis
   const selectedCountry = await signUpPage.getPreSelectedCountry();
   expect(selectedCountry).to.equal(expectedCountry);
   this.attach(`Country pre-selected correctly: ${selectedCountry}`);
+  const screenshot = await page.screenshot();
+  this.attach(screenshot, 'image/png');
 });
 
 Then('the user enters the company name {string} selects a reason {string} from How did you hear about us?',
@@ -195,6 +219,8 @@ Then('the user enters the company name {string} selects a reason {string} from H
     await signUpPage.enterCompanyName(companyName);
     this.attach(` Selecting Reason: ${reason}...`);
     await signUpPage.selectReason(reason);
+    const screenshot = await page.screenshot();
+    this.attach(screenshot, 'image/png');
   });
 
 Then('country {string} should be present in dropdown list of Where is your company registered? dropdown',
@@ -203,12 +229,16 @@ Then('country {string} should be present in dropdown list of Where is your compa
     const isCountryPresent = await signUpPage.isCountryInDropdown(country);
     expect(isCountryPresent).to.be.true;
     this.attach(` Country "${country}" is available in the dropdown list.`);
+    const screenshot = await page.screenshot();
+    this.attach(screenshot, 'image/png');
   });
 
 Then('the user selects country {string} from the dropdown list', async function (country) {
   this.attach(` Selecting country "${country}" from the dropdown list...`);
   await signUpPage.selectCountryFromDropdown(country);
   this.attach(` Country "${country}" selected successfully.`);
+  const screenshot = await page.screenshot();
+  this.attach(screenshot, 'image/png');
 });
 
 Then('selected country {string} should be displayed in the Where is your company registered? dropdown',
@@ -217,5 +247,7 @@ Then('selected country {string} should be displayed in the Where is your company
     const selectedCountry = await signUpPage.getSelectedCountry();
     expect(selectedCountry).to.equal(expectedCountry);
     this.attach(` Selected country is displayed correctly.`);
+    const screenshot = await page.screenshot();
+    this.attach(screenshot, 'image/png');
   });
 
