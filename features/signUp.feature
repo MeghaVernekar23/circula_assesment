@@ -37,7 +37,7 @@ Feature: Sign-Up Navigation
 
     Examples:
       | Email Address     | Password  | First Name | Last Name | Phone Number | Company Name | reason      | country |
-      | megha@circula.com | Megha@123 | Megha      | Vernekar  |     12345678 | Circula      | Tax Advisor | Germany |
+      | megha@circula.com | Megha@123 | Megha      | Vernekar  |     12345678 | TestCompany  | Tax Advisor | Germany |
 
   Scenario Outline: Verify that user is able to select Country Sweden in Where is your company registered? dropdown
     Given the user is on the Sign-Up page
