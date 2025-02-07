@@ -17,7 +17,7 @@
     "@cucumber/pretty-formatter": "^1.0.1",
     "@playwright/test": "^1.50.1",
     "chai": "^5.1.2",
-    "cucumber-html-reporter": "^7.2.0"
+    "cucumber-html-reporter": "^6.0.0"
   },
   "dependencies": {
     "dotenv": "^16.4.7"
