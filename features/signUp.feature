@@ -32,8 +32,8 @@ Feature: Sign-Up Navigation
     And the user clicks on Next Step
     And the user should be successfully navigated to the Company Information page
     And the user enters the company name "<Company Name>"
-    And the user selects a reason "<reason>" from How did you hear about us?
     And country "<country>" should be pre-selected in the Where is your company registered? dropdown
+    And the user selects a reason "<reason>" from How did you hear about us?
 
     Examples:
       | Email Address     | Password  | First Name | Last Name | Phone Number | Company Name | reason      | country |
