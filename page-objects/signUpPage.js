@@ -66,7 +66,7 @@ class SignUpPage extends Base {
         const acceptButton = await shadowRoot.evaluateHandle(root => 
           [...root.querySelectorAll('button')].find(btn => btn.textContent.includes('Accept All'))
       );
-      this.log("Privacy Settings popup is visible");
+      
       if (acceptButton) await acceptButton.click();
     }
 
