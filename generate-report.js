@@ -18,7 +18,7 @@ const options = {
         "Test Environment": "QA",
         "Browser": process.env.BROWSER || "chromium",
         "Headless Mode": process.env.HEADLESS === 'true' ? "Yes" : "No",
-        "Platform": process.platform,
+       // "Platform": process.platform,
         "Executed": "Automated"
     }
 };
