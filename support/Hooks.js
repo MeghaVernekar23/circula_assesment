@@ -4,8 +4,6 @@ import dotenv from 'dotenv';
 import { execSync } from 'child_process';
 dotenv.config();
 
-setDefaultTimeout(1000 * 60 * 2);
-
 let browser;
 let context;
 let page;
