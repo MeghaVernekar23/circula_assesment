@@ -21,7 +21,7 @@ Given('the user is on the login page', async function () {
   this.attach(screenshot, 'image/png');
 });
 
-Given('the user accepts the privacy settings', async function () {
+Then('the user accepts the privacy settings', async function () {
   this.attach(" Checking for Privacy Settings popup...");
   await signInPage.acceptPrivacySetting(page);
   this.attach(" Click on Accept All.");
